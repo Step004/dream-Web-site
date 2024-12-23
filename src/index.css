@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #101010;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #101010;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* 
+@media (max-width: 768px) {
+  body {
+    display: flex;
+  }
+} */
+
+html::-webkit-scrollbar {
+  background: #101010;
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.carousel {
+  width: 1400px;
+  margin: auto;
+}
+
+.carousel-item div {
+  width: 100% !important;
+  height: 680px !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  margin-inline: 60px;
+  height: fit-content;
+  align-self: center;
+}
+
+.carousel .carousel-control-next-icon {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next-icon {
+  visibility: visible;
+}
+
+.carousel .carousel-control-prev-icon {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev-icon {
+  visibility: visible;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.react-player__play-icon {
+  border: none !important;
+}

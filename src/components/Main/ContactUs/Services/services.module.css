@@ -1,0 +1,21 @@
+.service_container {
+    max-width: 440px;
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 16px;
+    margin-block-start: 25px;
+}
+
+.service_title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+}

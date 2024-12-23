@@ -1,0 +1,29 @@
+.footer_container {
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 150px;
+    border-top: 3px solid #efb558;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    margin: 80px 100px;
+    color: #a8a8a8;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        margin: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .footer {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+}

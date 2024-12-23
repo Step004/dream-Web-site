@@ -1,0 +1,85 @@
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  position: relative;
+  top: 130px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 110%;
+  z-index: 100;
+  margin-left: 111px;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.imageContainer {
+  position: relative;
+  /* width: 13%; */
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.images img:hover {
+  transform: scale(1.4);
+}
+
+.videoWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(var(--rotate-angle));
+  /* Центруємо і обертаємо */
+  border: 5px solid #3f8dd6;
+  border-radius: 5%;
+  transition: transform 0.3s ease-in-out;
+  /* Плавна трансформація */
+}
+
+.videoWrapper:hover {
+  transform: translate(-50%, -50%) scale(1.4) rotate(var(--rotate-angle));
+  /* Масштабування при наведенні */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .title {
+    margin: 0;
+    font-size: 90px;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 0;
+    font-size: 48px;
+    padding: 0 24px;
+  }
+}

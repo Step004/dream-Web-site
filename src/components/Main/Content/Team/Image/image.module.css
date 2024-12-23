@@ -1,0 +1,94 @@
+.team_photo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+.team_photo {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.team_photo:nth-child(1) {
+  transform: perspective(600px) rotateY(15deg) scale(0.85);
+}
+
+.team_photo:nth-child(2) {
+  transform: scale(1);
+  z-index: 1;
+}
+
+.team_photo:nth-child(3) {
+  transform: perspective(600px) rotateY(-15deg) scale(0.85);
+}
+
+.team_img,
+.team_description {
+  border-radius: 8px;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.team_img {
+  opacity: 1;
+}
+
+.team_description {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc567;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.team_photo:hover .team_img {
+  opacity: 0;
+}
+
+.team_photo:hover .team_description {
+  opacity: 1;
+}
+
+.title {
+  position: absolute;
+  top: -100px;
+  color: white;
+}
+
+.book_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  height: 59px;
+  width: 187px;
+  cursor: pointer;
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.creditials {
+  position: absolute;
+  top: 75px;
+  left: 28px;
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-size: 24px;
+}

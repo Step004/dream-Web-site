@@ -1,0 +1,159 @@
+.title {
+  position: relative;
+  top: 130px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 150px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 110%;
+  z-index: 100;
+}
+
+.slider_container {
+  margin-inline: 50px;
+}
+
+.image_description__container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 30px;
+  opacity: 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.view_project_link,
+.image_description {
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.image_description {
+  color: #9e9e9e;
+}
+
+.view_project_link {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.view_project_link:hover .confirmIcon {
+  transform: translateX(8px);
+}
+
+.image_header {
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.images_container {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 63px;
+}
+
+.image_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 257px;
+  height: 640px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: width 0.6s ease-in-out;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.7s ease-in-out;
+
+  width: 100%;
+  height: 900px;
+}
+
+.image_container:nth-child(2) {
+  width: 900px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image_container:not(:nth-child(2)):hover {
+  width: 2000px;
+}
+
+.image_container:hover .image_description__container {
+  opacity: 1;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+.image_container::-webkit-scrollbar {
+  width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .slider_container {
+    margin-inline: 0;
+  }
+
+  
+  .image_container {
+    position: relative;
+    width: 300px;
+    height: 640px;
+    overflow: hidden;
+    margin-top: 10%;
+  }
+
+  .image_container.active {
+    width: 100%;
+  }
+
+  .image_container:nth-child(2) {
+    width: 900px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image_container.active .image_description__container {
+    opacity: 1;
+  }
+}

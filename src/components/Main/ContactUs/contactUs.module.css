@@ -1,0 +1,65 @@
+.title {
+    position: relative;
+    top: 130px;
+    padding: 0 88px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 150px;
+    text-transform: uppercase;
+    line-height: 110%;
+    z-index: 100;
+}
+
+.containerAround {
+    max-width: 1263px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.contact_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 380px;
+    border: 4px solid #008b49;
+    border-radius: 32px;
+    padding: 44px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 970px) {
+    .title {
+        top: 120px;
+        padding: 0 60px;
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .title {
+        top: 100px;
+        padding: 0 20px;
+        font-size: 45px;
+    }
+
+    .contact_container {
+        flex-direction: column;
+        gap: 20px;
+        min-height: 380px;
+        border: 4px solid #008b49;
+        border-radius: 32px;
+        padding: 44px;
+    }
+
+    .contact_container {
+        padding: 24px;
+    }
+}
